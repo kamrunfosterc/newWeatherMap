@@ -2,15 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#33b5e5">
+
+    <title>Weather App</title>
+
+    <!-- Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/css/mdb5/3.9.0/compiled.min.css?ver=3.9.0-update.4">
+    <link rel="stylesheet" href="https://mdbootstrap.com/api/snippets/static/download/MDB5-Pro-Advanced_3.3.0/plugins/css/all.min.css">
+    <link rel='stylesheet' id='roboto-subset.css-css'
+          href='https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/css/mdb5/fonts/roboto-subset.css?ver=3.9.0-update.5'
+          type='text/css' media='all' />
+    <link rel="stylesheet" href="../css/weatherApp.css">
 </head>
 <body>
-<container>
-    <nav>Navbar</nav>
-    <div>header section</div>
-    <div>search button and box</div>
-</container>
+    <nav>
+        <div class = "navigation">
 
+            <ul>
+                <li class = "list">
+                    <a href="#">
+                        <span class = "icon"></span>
+                        <span class = "text">Home</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class = "list">
+                    <a href="#">
+                        <span class = "icon"></span>
+                        <span class = "text">Profile</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class = "list">
+                    <a href="#">
+					<span class = "icon">
+						<ion-icon name="home-outline"></ion-icon>
+					</span>
+                        <span class = "text">Messages</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class = "list">
+                    <a href="#">
+                        <span class = "icon"></span>
+                        <span class = "text">Photos</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class = "list">
+                    <a href="#">
+                        <span class = "icon"></span>
+                        <span class = "text">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <hr>
+    <div><h1>header section</h1></div>
+    <hr>
+<main>
+    <div id = 'weatherHead' class = 'nav'>
+        <div class="col-8"><h4>Weather App</h4></div>
+        <div class="col-4 align-items-end currentCity">Current City: ____</div>
+    </div>
+</main>
+<hr>
 
 <!--Rain or Shine-->
 <footer>
@@ -208,6 +272,15 @@
         </div>
     </section>
 </footer>
+
+<!-- Scripts -->
+<script type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+</script>
+<script nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">
+
+</script>
 
 </body>
 </html>
