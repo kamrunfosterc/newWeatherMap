@@ -16,6 +16,11 @@
           href='https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/css/mdb5/fonts/roboto-subset.css?ver=3.9.0-update.5'
           type='text/css' media='all' />
     <link rel="stylesheet" href="../css/weatherApp.css">
+
+<!-- css links -->
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -24,7 +29,7 @@
             <ul>
                 <li class = "list">
                     <a href="#">
-                        <span class = "icon"></span>
+                        <span class = "icon"><i class="fas fa-home"></i></span>
                         <span class = "text">Home</span>
                     </a>
                 </li>
@@ -32,7 +37,7 @@
             <ul>
                 <li class = "list">
                     <a href="#">
-                        <span class = "icon"></span>
+                        <span class = "icon"><i class="far fa-id-badge"></i></span>
                         <span class = "text">Profile</span>
                     </a>
                 </li>
@@ -41,7 +46,7 @@
                 <li class = "list">
                     <a href="#">
 					<span class = "icon">
-						<ion-icon name="home-outline"></ion-icon>
+						<ion-icon name="home-outline"><i class="far fa-envelope"></i></ion-icon>
 					</span>
                         <span class = "text">Messages</span>
                     </a>
@@ -50,7 +55,7 @@
             <ul>
                 <li class = "list">
                     <a href="#">
-                        <span class = "icon"></span>
+                        <span class = "icon"><i class="far fa-images"></i></span>
                         <span class = "text">Photos</span>
                     </a>
                 </li>
@@ -58,20 +63,29 @@
             <ul>
                 <li class = "list">
                     <a href="#">
-                        <span class = "icon"></span>
+                        <span class = "icon"><i class="fas fa-cogs"></i></span>
                         <span class = "text">Settings</span>
                     </a>
                 </li>
             </ul>
         </div>
+        <div>
+            <label for="search"></label><input id="search" type="text" placeholder="City, State">
+            <button id="find" type="button" class="btn btn-primary">Explore</button>
+        </div>
     </nav>
     <hr>
-    <div><h1>header section</h1></div>
+    <div>
+        <h1>Weather Application 2.0</h1>
+    </div>
     <hr>
 <main>
     <div id = 'weatherHead' class = 'nav'>
         <div class="col-8"><h4>Weather App</h4></div>
         <div class="col-4 align-items-end currentCity">Current City: ____</div>
+    </div>
+    <div class="row">
+        <div id="map" style="width: 98vw; height: 75vw;"></div>
     </div>
 </main>
 <hr>
