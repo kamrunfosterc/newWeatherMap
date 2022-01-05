@@ -15,6 +15,16 @@
  */
 
 //function 1: geocode search
+function geocode(search,token){
+    let mapUrl = 'https://api.mapbox.com';
+    let endPoint = '/geocoding/v5/mapbox.places/';
+    return fetch(mapUrl + endPoint +encodeURIComponent(search) + '.json' + "?" + 'access_token=' + token)
+        .then(function(res){
+            return res.json();
+        }).then(function (data){
+            return data.features[0].center;
+        })
+}
 
 
 /***
