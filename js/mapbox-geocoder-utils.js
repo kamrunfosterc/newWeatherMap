@@ -23,7 +23,7 @@ function geocode(search,token){
             return res.json();
         }).then(function (data){
             return data.features[0].center;
-        })
+        });
 }
 
 
@@ -42,3 +42,14 @@ function geocode(search,token){
  */
 
 //function 2: geocode coordinates
+function reverseGeocode(coordinates, token){
+    let mapUrl = 'https://api.mapbox.com';
+    let endPoint = '/geocoding/v5/mapbox.places/';
+    return fetch(mapUrl + endPoint + coordinates.lng + "," + coordinates.lat + '.json' + "?" + 'access_token=' + token)
+        .then(function (res){
+            return res.json();
+        })
+        .then(function (data){
+            return data.features[0].place_name;
+        });
+}
