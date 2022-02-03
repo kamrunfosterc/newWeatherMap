@@ -1,10 +1,22 @@
 
-
 .my-col{
     border: 5px dotted black;
 }
 .my-row{
     border: 2px solid red;
+}
+
+/*pertains to home,prof,msg,photos...search box*/
+.nav-list{
+    display: flex;
+    /*flex-direction: row;*/
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .btn-3::after{
@@ -24,9 +36,6 @@ footer{
     background-color: grey;
 }
 
-.weatherHead{
-
-}
 #weatherHead{
     color: white;
     background-color: #3B94D9;

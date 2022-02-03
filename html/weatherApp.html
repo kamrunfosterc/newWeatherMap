@@ -29,25 +29,22 @@
 </head>
 <body>
     <nav>
-        <div class = "navigation">
-
-            <ul>
+        <div>
+            <ul class = "nav-list">
                 <li class = "list">
                     <a href="#">
                         <span class = "icon"><i class="fas fa-home"></i></span>
                         <span class = "text">Home</span>
                     </a>
                 </li>
-            </ul>
-            <ul>
+
                 <li class = "list">
                     <a href="#">
                         <span class = "icon"><i class="far fa-id-badge"></i></span>
                         <span class = "text">Profile</span>
                     </a>
                 </li>
-            </ul>
-            <ul>
+
                 <li class = "list">
                     <a href="#">
 					<span class = "icon">
@@ -56,27 +53,27 @@
                         <span class = "text">Messages</span>
                     </a>
                 </li>
-            </ul>
-            <ul>
+
                 <li class = "list">
                     <a href="#">
                         <span class = "icon"><i class="far fa-images"></i></span>
                         <span class = "text">Photos</span>
                     </a>
                 </li>
-            </ul>
-            <ul>
+
                 <li class = "list">
                     <a href="#">
                         <span class = "icon"><i class="fas fa-cogs"></i></span>
                         <span class = "text">Settings</span>
                     </a>
                 </li>
+                <li>
+                    <div>
+                        <label for="search"></label><input id="search" type="text" placeholder="City, State">
+                        <button id="find" type="button" class="btn btn-primary">Explore</button>
+                    </div>
+                </li>
             </ul>
-        </div>
-        <div>
-            <label for="search"></label><input id="search" type="text" placeholder="City, State">
-            <button id="find" type="button" class="btn btn-primary">Explore</button>
         </div>
     </nav>
     <hr>
@@ -344,7 +341,9 @@
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
 <script src="/js/jquery.js"></script>
+<!--<script src="./js/mapbox-geocoder-utils.js"></script>-->
 <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
+<script src="../js/mapbox-geocoder-utils.js"></script>
 
 
 </body>
