@@ -12,13 +12,23 @@
 </head>
 <body>
 
-<div class="container"><!-- container-fluid -->
-    <h1>1st Container</h1>
+<div class="container-fluid"><!-- container-fluid -->
+<!--    <h1>1st Container</h1>-->
 
     <!-- Weather and Detail information -->
     <div class="row testRow">
         <div class="col col-3  weather">Weather 1
-            <div class="row" id="weatherIcon">A</div>
+            <div class="row" id="weatherIcon">
+                <div class="card" style="width: 10em; height: 10em; text-wrap: normal; border: 1px solid black;">
+                    <div class="card-body">
+                        <div class="card-title">Icon</div>
+                        <div class="card-text">descript+location name</div>
+                        <div class="card-text" style="font-size: 8px">chng loca</div>
+                        <!--                    <a href="#" class="btn btn-primary">Next</a>-->
+                    </div>
+                    <!--                <img src="http://otlsm.com/wp-content/uploads/2016/04/IMG_2650-169x300.jpg" class="card-img-top" style="width:70px; height: 70px;" alt="...">-->
+                </div>
+            </div>
             <div class="row" id="describe">B</div>
             <div class="row" id="currentTemp">C</div>
             <div class="row" id="cityState">D</div>
@@ -42,35 +52,125 @@
     <!-- lower part that has day and hourly weather information -->
     <div class="row testRow">
         <div class="col hrly"> <br>
+            <!--Card 1-->
             <div class="row">
-                <div class="col" id="hr1">A</div>
-            </div>
-                <div class="row">
-                    <div class="col" id="hr2">B</div>
+                <div class="col "><!--hr class-->
+                    <div class="card" style="width: 6em; text-wrap: normal; border: 1px solid black;">
+                        <div class="card-body">
+                            <h6 class="card-text">3pm</h6>
+                            <h5 class="card-title">28 C</h5>
+                            <p class="card-text">Feels like: </p>
+                            <!--                    <a href="#" class="btn btn-primary">Next</a>-->
+                        </div>
+                        <!--                <img src="http://otlsm.com/wp-content/uploads/2016/04/IMG_2650-169x300.jpg" class="card-img-top" style="width:70px; height: 70px;" alt="...">-->
+                    </div>
                 </div>
-            <div class="row">
-                <div class="col" id="hr3">C</div>
             </div>
+            <!--Card 2-->
             <div class="row">
-                <div class="col" id="hr4">D</div>
+                <div class="col "><!--hr class-->
+                    <div class="card" style="width: 6em; text-wrap: normal; border: 1px solid black;">
+                        <div class="card-body">
+                            <h6 class="card-text">4pm</h6>
+                            <h5 class="card-title">28 C</h5>
+                            <p class="card-text">Feels like: </p>
+                            <!--                    <a href="#" class="btn btn-primary">Next</a>-->
+                        </div>
+                        <!--                <img src="http://otlsm.com/wp-content/uploads/2016/04/IMG_2650-169x300.jpg" class="card-img-top" style="width:70px; height: 70px;" alt="...">-->
+                    </div>
+                </div><!-- id="hr2"-->
             </div>
+            <!-- Card 3 -->
             <div class="row">
-                <div class="col" id="hr5">E</div>
+                <div class="col "><!--hr class-->
+                    <div class="card" style="width: 6em; text-wrap: normal; border: 1px solid black;">
+                        <div class="card-body">
+                            <h6 class="card-text">5pm</h6>
+                            <h5 class="card-title">28 C</h5>
+                            <p class="card-text">Feels like: </p>
+                            <!--                    <a href="#" class="btn btn-primary">Next</a>-->
+                        </div>
+                        <!--                <img src="http://otlsm.com/wp-content/uploads/2016/04/IMG_2650-169x300.jpg" class="card-img-top" style="width:70px; height: 70px;" alt="...">-->
+                    </div>
+                </div><!-- id="hr3"-->
             </div>
+            <!-- Card 4 -->
             <div class="row">
-                <div class="col" id="hr6">F</div>
+                <div class="col "><!--hr class-->
+                    <div class="card" style="width: 6em; text-wrap: normal; border: 1px solid black; opacity: 0.1;">
+                        <div class="card-body">
+                            <h6 class="card-text">6pm</h6>
+                            <h5 class="card-title">28 C</h5>
+                            <p class="card-text">Feels like: </p>
+                            <!--                    <a href="#" class="btn btn-primary">Next</a>-->
+                        </div>
+                        <!--                <img src="http://otlsm.com/wp-content/uploads/2016/04/IMG_2650-169x300.jpg" class="card-img-top" style="width:70px; height: 70px;" alt="...">-->
+                    </div>
+                </div><!-- id="hr4"-->
             </div>
+            <!-- Card 5 -->
             <div class="row">
-                <div class="col" id="hr7">G</div>
+                <div class="col "><!--hr class-->
+                    <div class="card" style="width: 6em; text-wrap: normal; border: 1px solid black;">
+                        <div class="card-body">
+                            <h6 class="card-text">7pm</h6>
+                            <h5 class="card-title">28 C</h5>
+                            <p class="card-text">Feels like: </p>
+                            <!--                    <a href="#" class="btn btn-primary">Next</a>-->
+                        </div>
+                        <!--                <img src="http://otlsm.com/wp-content/uploads/2016/04/IMG_2650-169x300.jpg" class="card-img-top" style="width:70px; height: 70px;" alt="...">-->
+                    </div>
+                </div><!-- id="hr5"-->
             </div>
+            <!-- Card 6 -->
             <div class="row">
-                <div class="col" id="hr8">H</div>
+                <div class="col "><!--hr class-->
+                    <div class="card" style="width: 6em; text-wrap: normal; border: 1px solid black;">
+                        <div class="card-body">
+                            <h6 class="card-text">8pm</h6>
+                            <h5 class="card-title">28 C</h5>
+                            <p class="card-text">Feels like: </p>
+                            <!--                    <a href="#" class="btn btn-primary">Next</a>-->
+                        </div>
+                        <!--                <img src="http://otlsm.com/wp-content/uploads/2016/04/IMG_2650-169x300.jpg" class="card-img-top" style="width:70px; height: 70px;" alt="...">-->
+                    </div>
+                </div><!-- id="hr6"-->
+            </div>
+            <!-- Card 7 -->
+            <div class="row">
+                <div class="col "><!--hr class-->
+                    <div class="card" style="width: 6em; text-wrap: normal; border: 1px solid black;">
+                        <div class="card-body">
+                            <h6 class="card-text">9pm</h6>
+                            <h5 class="card-title">28 C</h5>
+                            <p class="card-text">Feels like: </p>
+                            <!--                    <a href="#" class="btn btn-primary">Next</a>-->
+                        </div>
+                        <!--                <img src="http://otlsm.com/wp-content/uploads/2016/04/IMG_2650-169x300.jpg" class="card-img-top" style="width:70px; height: 70px;" alt="...">-->
+                    </div>
+                </div><!-- id="hr7"-->
+            </div>
+            <!-- Card 8 -->
+            <div class="row">
+                <div class="col "><!--hr class-->
+                    <div class="card" style="width: 6em; text-wrap: normal; border: 1px solid black;">
+                        <div class="card-body">
+                            <h6 class="card-text">10pm</h6>
+                            <h5 class="card-title">28 C</h5>
+                            <p class="card-text">Feels like: </p>
+                            <!--                    <a href="#" class="btn btn-primary">Next</a>-->
+                        </div>
+                        <!--                <img src="http://otlsm.com/wp-content/uploads/2016/04/IMG_2650-169x300.jpg" class="card-img-top" style="width:70px; height: 70px;" alt="...">-->
+                    </div>
+                </div><!-- id="hr8"-->
             </div>
         </div>
     </div>
 
 </div>
 
+<br><br><br>
+<!-- 2ND CONTAINER SECTION WHERE OUR MAP MIGHT BE LOCATED -->
 <div class="container"><!-- container-fluid -->
     <!-- Top -->
     <h1>2nd Container</h1>
@@ -82,6 +182,19 @@
     <div class="row testRow">
         <div class="col-sm-6 testCol">Col-three</div>
         <div class="col-sm-6 testCol">Col-four</div>
+    </div>
+    <div class="row testRow">
+        <div class="col-sm-6 testCol">
+            <div class="card" style="width: 15vw; text-wrap: normal; border: 1px solid black;">
+                <div class="card-body">
+                    <h6 class="card-text">3pm</h6>
+                    <h5 class="card-title">28 C</h5>
+                    <p class="card-text">Feels like: </p>
+<!--                    <a href="#" class="btn btn-primary">Next</a>-->
+                </div>
+<!--                <img src="http://otlsm.com/wp-content/uploads/2016/04/IMG_2650-169x300.jpg" class="card-img-top" style="width:70px; height: 70px;" alt="...">-->
+            </div>
+        </div>
     </div>
 </div>
 
