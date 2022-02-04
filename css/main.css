@@ -1,0 +1,45 @@
+/*h2{*/
+/*    text-align: center;*/
+/*}*/
+/*.current{*/
+/*    border: 1px solid dodgerblue;*/
+/*    padding: 1px;*/
+/*}*/
+
+body{
+    color: #dba858;
+}
+.container{
+    border: 1px dashed green;
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    width: 90vw;
+    height: 90vh;
+    padding: 10px;
+}
+
+/*.details{*/
+/*    border: 1px solid orangered;*/
+/*    padding: 1px;*/
+/*}*/
+/*.hrly{*/
+/*    border: 1px solid mediumspringgreen;*/
+/*    padding: 1px;*/
+/*    justify-content: flex-end;*/
+/*}*/
+
+/*.negSpace{*/
+/*    width: 10vw;*/
+/*}*/
+
+
+/* ************************* Testing ************************* */
+/* ************************* Testing ************************* */
+
+.testCol{
+    border: 1px solid #083248;
+}
+.testRow{
+    border: 1px solid #8c0e0f;
+}
+
