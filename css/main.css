@@ -18,19 +18,21 @@ body{
     padding: 10px;
 }
 
-/*.details{*/
-/*    border: 1px solid orangered;*/
-/*    padding: 1px;*/
-/*}*/
-/*.hrly{*/
-/*    border: 1px solid mediumspringgreen;*/
-/*    padding: 1px;*/
-/*    justify-content: flex-end;*/
-/*}*/
+.detail{
+    background-color: #3B94D9;
+    /*border: 1px solid orangered;*/
+    /*padding: 1px;*/
+}
+.hrly{
+    background-color: #8c0e0f;
+    /*border: 1px solid mediumspringgreen;*/
+    /*padding: 1px;*/
+    /*justify-content: flex-end;*/
+}
 
-/*.negSpace{*/
-/*    width: 10vw;*/
-/*}*/
+.weather{
+    background-color: #dba858;
+}
 
 
 /* ************************* Testing ************************* */
