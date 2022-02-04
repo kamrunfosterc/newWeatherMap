@@ -18,21 +18,71 @@ body{
     padding: 10px;
 }
 
+/* ************************* details div  ************************* */
 .detail{
     background-color: #3B94D9;
+    height: 50vh;
+    width: 30vw;
     /*border: 1px solid orangered;*/
     /*padding: 1px;*/
 }
+#humidity{
+    width: 50px;
+    height: 20px;
+    border: 1px solid #8c0e0f;
+}
+#airPress{
+    width: 50px;
+    height: 20px;
+    border: 1px solid #8c0e0f;
+}
+#chanceOf{
+    width: 50px;
+    height: 20px;
+    border: 1px solid #8c0e0f;
+}
+#windSpd{
+    width: 50px;
+    height: 20px;
+    border: 1px solid #8c0e0f;
+}
+/* ************************* details div  ************************* */
+
 .hrly{
     background-color: #8c0e0f;
+    height: 30vh;
     /*border: 1px solid mediumspringgreen;*/
     /*padding: 1px;*/
     /*justify-content: flex-end;*/
 }
 
+/* ************************* weather div  ************************* */
 .weather{
     background-color: #dba858;
+    height: 50vh;
+    width: 30vw;
 }
+#weatherIcon{
+    width: 50px;
+    height: 20px;
+    border: 1px solid #0b2838;
+}
+#describe{
+    width: 50px;
+    height: 20px;
+    border: 1px solid #0b2838;
+}
+#currentTemp{
+    width: 50px;
+    height: 20px;
+    border: 1px solid #0b2838;
+}
+#cityState{
+    width: 50px;
+    height: 20px;
+    border: 1px solid #0b2838;
+}
+/* ************************* weather div  ************************* */
 
 
 /* ************************* Testing ************************* */
@@ -41,7 +91,9 @@ body{
 .testCol{
     border: 1px solid #083248;
 }
-.testRow{
+.testRow {
     border: 1px solid #8c0e0f;
 }
+
+
 
