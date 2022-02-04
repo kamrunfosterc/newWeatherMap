@@ -46,15 +46,60 @@ body{
     height: 20px;
     border: 1px solid #8c0e0f;
 }
-/* ************************* details div  ************************* */
 
+
+/* ************************* hourly div  ************************* */
 .hrly{
     background-color: #8c0e0f;
     height: 30vh;
-    /*border: 1px solid mediumspringgreen;*/
-    /*padding: 1px;*/
-    /*justify-content: flex-end;*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+    /*flex-direction: row;*/
 }
+#hr1{
+    width: 20px;
+    height: 50px;
+    border: 1px solid #dba858;
+}
+#hr2{
+    width: 20px;
+    height: 50px;
+    border: 1px solid #dba858;
+}
+#hr3{
+    width: 20px;
+    height: 50px;
+    border: 1px solid #dba858;
+}
+#hr4{
+    width: 20px;
+    height: 50px;
+    border: 1px solid #dba858;
+}
+#hr5{
+    width: 20px;
+    height: 50px;
+    border: 1px solid #dba858;
+}
+#hr6{
+    width: 20px;
+    height: 50px;
+    border: 1px solid #dba858;
+}
+#hr7{
+    width: 20px;
+    height: 50px;
+    border: 1px solid #dba858;
+}
+#hr8{
+    width: 20px;
+    height: 50px;
+    border: 1px solid #dba858;
+}
+
+
 
 /* ************************* weather div  ************************* */
 .weather{
@@ -82,11 +127,18 @@ body{
     height: 20px;
     border: 1px solid #0b2838;
 }
-/* ************************* weather div  ************************* */
 
 
-/* ************************* Testing ************************* */
-/* ************************* Testing ************************* */
+
+/* ************************* current day div  ************************* */
+.currentDay{
+    width: 50px;
+    height: 20px;
+    border: 1px solid #0b2838;
+}
+
+
+
 
 .testCol{
     border: 1px solid #083248;
