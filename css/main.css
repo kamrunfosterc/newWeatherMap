@@ -7,7 +7,9 @@
 /*}*/
 
 body{
-    color: #dba858;
+    /*color: #dba858;*/
+    background-image: url(../css/img/starfall-gif-46.gif);
+    /*background-image: url("https://acegif.com/wp-content/gifs/starfall-gif-46.gif");*/
 }
 .container{
     border: 1px dashed green;
@@ -20,11 +22,11 @@ body{
 
 /* ************************* details div  ************************* */
 .detail{
-    background-color: #dba858;
+    /*background-color: #dba858;*/
     padding-top: 20px;
     height: 60vh;
     width: 30vw;
-    /*border: 1px solid orangered;*/
+    border: 1px solid orangered;
     /*padding: 1px;*/
 }
 #altWeather{
@@ -33,7 +35,6 @@ body{
     width: 8em;
     height: 10em;
     text-wrap: normal;
-
 }
 #humidity{
     font-size: 8px
@@ -75,12 +76,13 @@ p{
 
 /* ************************* weather div  ************************* */
 .weather{
-    background-color: #dba858;
+    /*background-color: #dba858;*/
+    /*display: flex;*/
+    /*align-items: center;*/
     padding-top: 20px;
     height: 60vh;
     width: 30vw;
-    /*display: flex;*/
-    /*align-items: center;*/
+    border: 1px solid orangered;
 }
 #weatherIcon{
     border-radius: 20%;
@@ -88,6 +90,7 @@ p{
     width: 8em;
     height: 10em;
     text-wrap: normal;
+    opacity: 0.3;
 }
 #describe{
     border-radius: 20%;
