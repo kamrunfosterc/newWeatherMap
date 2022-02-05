@@ -65,7 +65,7 @@ p{
     /*flex-direction: row;*/
 }
 
-.hr{
+.hr{ /*hourly cards located at bottom*/
     width: 60px;
     height: 120px;
     align-self: center;
