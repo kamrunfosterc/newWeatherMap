@@ -35,6 +35,7 @@ body{
     width: 8em;
     height: 10em;
     text-wrap: normal;
+    opacity: 0.3;
 }
 #humidity{
     font-size: 8px
@@ -69,6 +70,7 @@ p{
     height: 120px;
     align-self: center;
     border: 1px solid #dba858;
+    opacity: 0.3;
 }
 .cardTimeDesign{
 
