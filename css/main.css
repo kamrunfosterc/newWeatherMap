@@ -20,31 +20,35 @@ body{
 
 /* ************************* details div  ************************* */
 .detail{
-    background-color: #3B94D9;
-    height: 50vh;
+    background-color: #dba858;
+    padding-top: 20px;
+    height: 60vh;
     width: 30vw;
     /*border: 1px solid orangered;*/
     /*padding: 1px;*/
 }
+#altWeather{
+    border-radius: 20%;
+    border: 1px solid #0b2838;
+    width: 8em;
+    height: 10em;
+    text-wrap: normal;
+
+}
 #humidity{
-    width: 50px;
-    height: 20px;
-    border: 1px solid #8c0e0f;
+    font-size: 8px
 }
 #airPress{
-    width: 50px;
-    height: 20px;
-    border: 1px solid #8c0e0f;
+    font-size: 8px
 }
 #chanceOf{
-    width: 50px;
-    height: 20px;
-    border: 1px solid #8c0e0f;
+    font-size: 8px
 }
 #windSpd{
-    width: 50px;
-    height: 20px;
-    border: 1px solid #8c0e0f;
+    font-size: 8px
+}
+p{
+    font-size: 10px;
 }
 
 
@@ -72,35 +76,54 @@ body{
 /* ************************* weather div  ************************* */
 .weather{
     background-color: #dba858;
-    height: 50vh;
+    padding-top: 20px;
+    height: 60vh;
     width: 30vw;
+    /*display: flex;*/
+    /*align-items: center;*/
 }
 #weatherIcon{
-    /*width: 50px;*/
-    /*height: 20px;*/
+    border-radius: 20%;
     border: 1px solid #0b2838;
+    width: 8em;
+    height: 10em;
+    text-wrap: normal;
 }
 #describe{
-    width: 50px;
-    height: 20px;
+    border-radius: 20%;
     border: 1px solid #0b2838;
-}
-#currentTemp{
-    width: 50px;
-    height: 20px;
-    border: 1px solid #0b2838;
+    width: 8em;
+    height: 10em;
+    text-wrap: normal;
 }
 #cityState{
-    width: 50px;
-    height: 20px;
+    border-radius: 20%;
     border: 1px solid #0b2838;
+    width: 8em;
+    height: 10em;
+    text-wrap: normal;
 }
-.weatherCardDesign{
-
+#currentTemp{
+    border-radius: 20%;
+    border: 1px solid #0b2838;
+    width: 8em;
+    height: 10em;
+    text-wrap: normal;
 }
-.detailCardDesign{
-
-}
+/*.weatherCardDesign{*/
+/*    border-radius: 20%;*/
+/*    border: 1px solid #0b2838;*/
+/*    width: 8em;*/
+/*    height: 10em;*/
+/*    text-wrap: normal;*/
+/*}*/
+/*.detailCardDesign{*/
+/*    border-radius: 20%;*/
+/*    border: 1px solid #0b2838;*/
+/*    width: 8em;*/
+/*    height: 10em;*/
+/*    text-wrap: normal;*/
+/*}*/
 
 
 /* ************************* current day div  ************************* */
