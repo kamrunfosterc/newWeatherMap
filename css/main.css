@@ -10,10 +10,14 @@
 body{
     /*color: #dba858;*/
     /*background-image: url(../css/img/starfall-gif-46.gif);*/
-    background-image: url("https://wallpaperaccess.com/full/535604.jpg");
+    /*https://www.google.com/search?q=wallpaper%20weather%20background&tbm=isch&hl=en&sa=X&ved=0CB0QtI8BKABqFwoTCIiDsqzD6_UCFQAAAAAdAAAAABAH&biw=1425&bih=725#imgrc=po2MRMpVrTNMrM*/
+    /*background-image: url("https://wallpapercave.com/wp/WSjKlp7.jpg");*/
     width: 100vw;
     height: 100vh;
 
+}
+.container-fluid{
+    background-image: url("https://images8.alphacoders.com/679/thumb-1920-679478.jpg");
 }
 .container{
     border: 1px dashed green;
@@ -22,22 +26,28 @@ body{
     width: 90vw;
     height: 100vh;
     padding: 10px;
+    background-image: url("https://wallpapercave.com/wp/WSjKlp7.jpg");
+
 }
 
 /* ************************* details div  ************************* */
-.detail{
+.detail{ /*RHS section*/
+    display: flex;
+    justify-content: center;
     /*background-color: #dba858;*/
     padding-top: 20px;
     height: 60vh;
     width: 30vw;
     border: 1px solid orangered;
+    justify-content: center;
     /*padding: 1px;*/
 }
-#altWeather{
-    border-radius: 20%;
+#altWeather{ /*RHS card*/
+    align-items: center;
+    border-radius: 15%;
     border: 1px solid #0b2838;
-    width: 8em;
-    height: 10em;
+    width: 10em;
+    height: 15em;
     text-wrap: normal;
     opacity: 0.3; /*opacity: 0.05;*/
     box-shadow: black;
@@ -60,7 +70,7 @@ p{
 
 
 /* ************************* hourly div  ************************* */
-.hrly{
+.hrly{/**/
     /*background-color: #8c0e0f;*/
     height: 200px;
     display: flex;
@@ -82,20 +92,24 @@ p{
 }
 
 /* ************************* weather div  ************************* */
-.weather{
+.weather{/*LHS section*/
     /*background-color: #dba858;*/
-    /*display: flex;*/
-    /*align-items: center;*/
+    display: flex;
+    justify-content: center;
     padding-top: 20px;
     height: 60vh;
     width: 30vw;
     border: 1px solid orangered;
 }
-#weatherIcon{
-    border-radius: 20%;
-    border: 1px solid #0b2838;
-    width: 8em;
-    height: 10em;
+#weatherIcon{/*LHS card */
+    /*align-items: center;*/
+
+    border-radius: 15%;
+    border-bottom-color: #083248;
+    border-left-color: #8c0e0f;
+    /*border: 1px solid #0b2838;*/
+    width: 10em;
+    height: 15em;
     text-wrap: normal;
     opacity: 0.3;
 }
@@ -138,6 +152,7 @@ p{
 
 /* ************************* current day div  ************************* */
 .currentDay{
+    text-align: center;
     width: 50px;
     height: 20px;
     border: 1px solid #0b2838;
