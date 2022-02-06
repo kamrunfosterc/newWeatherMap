@@ -6,10 +6,14 @@
 /*    padding: 1px;*/
 /*}*/
 
+/*TODO want to view ui.glass/generator/ for clarity on creating glass like background*/
 body{
     /*color: #dba858;*/
-    background-image: url(../css/img/starfall-gif-46.gif);
-    /*background-image: url("https://acegif.com/wp-content/gifs/starfall-gif-46.gif");*/
+    /*background-image: url(../css/img/starfall-gif-46.gif);*/
+    background-image: url("https://wallpaperaccess.com/full/535604.jpg");
+    width: 100vw;
+    height: 100vh;
+
 }
 .container{
     border: 1px dashed green;
@@ -35,7 +39,8 @@ body{
     width: 8em;
     height: 10em;
     text-wrap: normal;
-    opacity: 0.3;
+    opacity: 0.3; /*opacity: 0.05;*/
+    box-shadow: black;
 }
 #humidity{
     font-size: 8px
@@ -56,7 +61,7 @@ p{
 
 /* ************************* hourly div  ************************* */
 .hrly{
-    background-color: #8c0e0f;
+    /*background-color: #8c0e0f;*/
     height: 200px;
     display: flex;
     justify-content: space-around;
