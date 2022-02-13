@@ -36,7 +36,32 @@ $(document).ready(function (data) {
     $.get(`.card`).html()
 })
 
-//TODO ********** ************** Weather JS Section ************ ***************
+
+
+
+
+
+//TODO ********** ************** Weather JS Mid Section ************ ***************
+
+$(document).ready(function () {
+    var long = -98.4916;//default longitude
+    var lati = 29.4252;//default latitude
+
+    //Map.setCenter(coordinates) play
+    mapboxgl.accessToken = mapboxAPIKey;
+    var map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/mapbox/streets-v11', // style URL
+        center: [long, lati], // starting position [lng, lat] [-98.4916, 29.4252]
+        zoom: 14 // starting zoom
+    });
+
+    var marker = new mapboxgl.Marker()// fixed marker set
+        .setLngLat([long, lati])// san antonio marker
+        .addTo(map);
+
+
+//TODO ********** ************** Weather JS Bottom Section ************ ***************
 
 var weatherOptions = {
     appid: OPEN_WEATHER_API_KEY,
@@ -86,61 +111,5 @@ function weatherData() {
         })
     });// used to get weather data from api
 }
-
-//CLICK Function assoc w the find button that changes map pos & card info based on that map pos
-// $("#find").keydown('keydown', logkey){
-// }
-
-//todo mapbox section
-
-// $("#find").click(function (e){
-//     e.preventDefault();
-//     //need geo code
-//     // console.log($("#search").val());// .val allows us to accept value being put in any element
-//     geocode($("#search").val(), mapboxgl.accessToken)
-//         .then(function (coordinates) {
-//             long = coordinates[0];
-//             lati = coordinates[1];
-//             console.log(coordinates)
-//             weatherOptions.lat = lati;// making change here to affect var outside of this function
-//             weatherOptions.lon = long;
-//             // map.setCenter(coordinates);// ################ chekc this out again
-//             $(".currentCity").html(`Current City: ${$("#search").val()}`)
-//
-//             // "current city" + $("#search").val()
-//             // marker.setLngLat() // this was causing an error with the fly-to call
-//
-//             // flys to a location vs jumping with this
-//             map.flyTo({
-//                 center: [
-//                     long,
-//                     lati
-//                 ],
-//                 zoom: 10,
-//                 essential: true
-//             });
-//             marker.setLngLat(coordinates)// have to set something inside here to work
-//
-//             weatherData()// reset after each call
-//         })
-// })
-
-// reverseGeocode(
-//     {lng: -98.4861, lat: 29.4260}, accessToken).then(function(results) {
-//
-// })
-
-
-
-
-//
-// var popup = new mapboxgl.Popup()
-//     .setLngLat([-98.4916, 29.4252])// san antonio popup
-//     .setHTML(`<p>WEATHER MAP!</p>`)
-//     .addTo(map);
-//
-// marker.setPopup(popup)// attaches popup to marker
-//}) end of document
-
 
 
