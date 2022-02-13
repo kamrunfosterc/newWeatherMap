@@ -112,4 +112,41 @@ function weatherData() {
     });// used to get weather data from api
 }
 
+//CLICK Function assoc w the find button that changes map pos & card info based on that map pos
+    // $("#find").keydown('keydown', logkey){
+    // }
+    $("#find").click(function (e){
+        e.preventDefault();
+        //need geo code
+        // console.log($("#search").val());// .val allows us to accept value being put in any element
+        geocode($("#search").val(), mapboxgl.accessToken)
+            .then(function (coordinates) {
+                long = coordinates[0];
+                lati = coordinates[1];
+                console.log(coordinates)
+                weatherOptions.lat = lati;// making change here to affect var outside of this function
+                weatherOptions.lon = long;
+                // map.setCenter(coordinates);// ################ chekc this out again
+                $(".currentCity").html(`Current City: ${$("#search").val()}`)
+
+                // "current city" + $("#search").val()
+                // marker.setLngLat() // this was causing an error with the fly-to call
+
+                // flys to a location vs jumping with this
+                map.flyTo({
+                    center: [
+                        long,
+                        lati
+                    ],
+                    zoom: 10,
+                    essential: true
+                });
+                marker.setLngLat(coordinates)// have to set something inside here to work
+
+                weatherData()// reset after each call
+            })
+    })
+
+})// end of document
+
 
