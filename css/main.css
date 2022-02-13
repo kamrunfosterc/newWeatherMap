@@ -45,7 +45,8 @@ body{
 #altWeather{ /*RHS card*/
     align-items: center;
     border-radius: 15%;
-    border: 1px solid #0b2838;
+    border-bottom-color: #083248;
+    border-left-color: #8c0e0f;
     width: 10em;
     height: 15em;
     text-wrap: normal;
@@ -75,17 +76,20 @@ p{
     height: 200px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     /*align-items: center;*/
     /*padding-bottom: 20px;*/
     /*flex-direction: row;*/
+    text-wrap: ;
 }
 
 .hr{ /*hourly cards located at bottom*/
     width: 60px;
     height: 120px;
     align-self: center;
-    border: 1px solid #dba858;
+    /*border: 1px solid #dba858;*/
     opacity: 0.3;
+    border-radius: 20%;
 }
 .cardTimeDesign{
 
