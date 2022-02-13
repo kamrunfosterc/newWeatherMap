@@ -26,6 +26,9 @@
 
 
     <script src="../js/keys.js"></script>
+    <!-- todo working on adding in weather app js to display updated info-->
+    <script src="../js/weatherApp.js"></script>
+
 
 </head>
 <body>
@@ -59,7 +62,7 @@
             <div class="row">
                 <div class="card" id="altWeather">
                     <div class="card-body">
-                        <div class="card-text" id="humidity"><strong>Humidity</strong> <p>50%</p></div><!--                        <strong>Humidity:</strong> ${day.humidity}<br> -->
+                        <div class="card-text" id="humidity"><strong>Humidity</strong> ${day.humidity} <p>50%</p></div><!--                        <strong>Humidity:</strong> ${day.humidity}<br> -->
                         <div class="card-text" id="airPress"><strong>Air Pressure</strong> <p>1009.48PS</p></div><!--              <strong>Pressure:</strong> ${day.pressure}hPa<br> -->
                         <div class="card-text" id="chanceOf"><strong>Chance of</strong> <p>9%</p></div><!--                        <strong>Pressure:</strong> ${day.chance}%<br>-->
                         <div class="card-text" id="windSpd"><strong>Wind Spd</strong> <p>8mph</p></div><!--                        <strong>Wind:</strong> ${day.wind_speed}mph<br> -->
@@ -255,8 +258,7 @@
 <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
 <script src="../js/mapbox-geocoder-utils.js"></script>
 
-<!-- todo my start section for adding in weatherapp js -->
-<script src="../js/weatherApp.js"></script>
+
 
 
 </body>
